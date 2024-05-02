@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit", sans-serif;
+}
+
+body {
+    width: 100%;
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    width: 80vw;
+    background-color: hsl(0, 0%, 100%);
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    padding: 40px;
+    border-radius: 30px;
+}
+
+.racipe {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+img {
+    width: 80vw;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+.pt {
+    padding: 20px;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 15px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Young Serif", serif;
+}
+
+h3,
+.inst h2,
+.ingr h2 {
+    margin-bottom: 20px;
+}
+
+li {
+    list-style-position: inside;
+}
+
+.pt ul li::marker {
+    color: hsl(332, 51%, 32%);
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.pt h3:first-child {
+    color: hsl(332, 51%, 32%);
+}
+
+h2 {
+    color: hsl(14, 45%, 36%);
+}
+
+.ingr ul li::marker {
+    color: hsl(14, 45%, 36%);
+}
+
+hr {
+    border: 1px solid hsl(30, 18%, 87%);
+}
+
+.inst ul li {
+    list-style: decimal;
+    list-style-position: inside;
+}
+
+.inst ul li::marker {
+    color: hsl(14, 45%, 36%);
+}
+
+.nutr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.nutr hr {
+    grid-column: 1/3;
+}
+
+.value {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+.Nutrition {
+    padding-left: 30px;
+}
+
+.point {
+    color: hsl(24, 5%, 18%);
+    font-weight: bold;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 450px) {
+    body {
+        background-color: white;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .box {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 30px;
+    }
+
+    .racipe {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
