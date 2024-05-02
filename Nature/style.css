@@ -1,0 +1,78 @@
+*{
+    align-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    margin-bottom: 30px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+ul li {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 2px;
+}
+
+.logo {
+    width: 15vw;
+}
+
+svg {
+    cursor: pointer;
+}
+
+.tr {
+    height: 8vh;
+}
+
+.c1{
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 60vw;
+}
+
+.box ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box ul li{
+    margin: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px 8px 15px;
+    background-color: rgb(92, 184, 92);
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+.box ul li:first-child{
+    font-size: 20px;
+    font-weight: bold;
+} 
+
+.box ul li:nth-child(2){
+    font-size: 15px;
+} 
