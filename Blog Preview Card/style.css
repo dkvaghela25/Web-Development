@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Figtree", sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(47, 88%, 63%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 280px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 24px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border: 2px solid black;
+    box-shadow: 5px 5px;
+}
+
+.article {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.learning {
+    width: 82px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    background-color: hsl(47, 88%, 63%);
+    text-align: center;
+    font-weight: bold;
+}
+
+.photo {
+    width: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+p {
+    color: hsl(0, 0%, 50%);
+}
+
+a {
+    color: hsl(0, 0%, 7%);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a:hover {
+    color: hsl(47, 88%, 63%);
+}
+
+.pub {
+    font-size: 14px;
+}
+
+.name {
+    font-weight: bold;
+}
