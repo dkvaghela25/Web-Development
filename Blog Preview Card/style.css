@@ -81,3 +81,10 @@ a:hover {
 .name {
     font-weight: bold;
 }
+
+@media (max-width: 450px){
+    .box{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
