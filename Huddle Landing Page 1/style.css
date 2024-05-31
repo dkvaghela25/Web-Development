@@ -23,7 +23,7 @@
 nav {
     display: flex;
     align-items: center;
-    display: block;
+    justify-content: space-between;
 }
 
 nav a {
@@ -239,14 +239,14 @@ nav a:hover {
     }
 
     .logo {
-        width: 40%;
+        width: 60%;
     }
 
     nav a {
-        width: 30%;
+        width: 35%;
         text-align: center;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
 
     .box1,
@@ -260,7 +260,7 @@ nav a:hover {
         padding: 15px;
         border-radius: 10px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        ;
+        gap: 70px;
     }
 
     .box1>div,
