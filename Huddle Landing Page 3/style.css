@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Very-Pale-Blue: hsl(207, 100%, 98%);
+    --Pink: hsl(322, 100%, 66%);
+    --Light-Pink: hsl(321, 100%, 78%);
+    --Light-Red: hsl(0, 100%, 63%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+}
+
+nav {
+    padding: 50px;
+    display: block;
+}
+
+nav a:nth-child(2) {
+    float: right;
+    padding: 5px 30px 5px 30px;
+    border: 1px solid var(--Pink);
+    border-radius: 9999px;
+    color: var(--Pink);
+    text-decoration: none;
+}
+
+nav a:nth-child(2):hover{
+    border: 1px solid var(--Light-Pink);
+    color: var(--Light-Pink);
+}
+
+.box1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    margin-top: 25vh;
+}
+
+.heading {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 43px;
+}
+
+.box1 p {
+    width: 530px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.start {
+    padding: 15px 70px 15px 70px;
+    border-radius: 9999px;
+    color: var(--Very-Pale-Blue);
+    font-weight: bold;
+    background-color: var(--Pink);
+    text-decoration: none;
+}
+
+.start:hover{
+    background-color: var(--Light-Pink);
+}
+
+.box1 img {
+    margin-top: 25vh;
+    width: 896px;
+}
+
+.box2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40vh;
+    gap: 40vh;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 40vh;
+}
+
+.info {
+    display: flex;
+    gap: 250px;
+}
+
+.info img {
+    width: 40px;
+}
+
+.numbers {
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+.about {
+    text-align: center;
+}
+
+.illustration {
+    display: flex;
+    gap: 100px;
+}
+
+.illustration img {
+    width: 500px;
+}
+
+.points {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.points>div {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.ready {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.ready>div:first-child {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 43px;
+}
+
+
+
+footer>div:first-child {
+    height: 158px;
+    background-image: url(./images/bg-footer-top-desktop.svg);
+}
+
+#about {
+    background-color: var(--Very-Dark-Cyan);
+    padding: 50px;
+    display: flex;
+}
+
+
+.box3,
+.box4 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: flex-start;
+    color: var(--Very-Pale-Blue);
+}
+
+
+
+.logo {
+    width: 240px;
+}
+
+.box3>p,.box4>p {
+    text-align: left;
+    width: 420px;
+}
+
+.contact{
+    display: flex;
+    gap: 20px;
+}
+
+.contact img{
+    width: 25px;
+}
+
+.others{
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.others img{
+    width: 50px;
+}
+
+.box4 > div{
+    text-align: left;
+}
+
+.sub{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+input{
+    width: 380px;
+    height: 35px;
+}
+
+.sub > a{
+    background-color: var(--Pink);
+    width: 150px;
+    text-align: center;
+    padding-top: 8.5px;
+    padding-bottom: 8.5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--Very-Pale-Blue);
+    font-weight: 500;
+}
+
+.sub a:hover{
+    background-color: var(--Light-Pink);
+}
+

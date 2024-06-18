@@ -16,7 +16,7 @@ body {
 }
 
 .box {
-    width: 80vw;
+    width: 70vw;
     background-color: hsl(0, 0%, 100%);
     margin-top: 5vw;
     margin-bottom: 5vw;
@@ -31,7 +31,7 @@ body {
 }
 
 img {
-    width: 80vw;
+    width: 100%;
     border-radius: 30px;
     margin-bottom: 30px;
 }
