@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  /* Text */
+
+  --Pale-Violet: hsl(276, 100%, 81%);
+  --Moderate-Violet: hsl(276, 55%, 52%);
+  --Desaturated-Dark-Violet: hsl(271, 15%, 43%);
+  --Grayish-Blue: hsl(206, 6%, 79%);
+  --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+  --Dark-Grayish-Violet: hsl(270, 7%, 64%);
+
+  /* Gradients */
+
+  --Light-Magenta: hsl(293, 100%, 63%);
+  --Light-Violet: hsl(264, 100%, 61%);
+
+  /* Secondary */
+
+  --White: hsl(0, 0%, 100%);
+  --Light-Grayish-Violet: hsl(270, 20%, 96%);
+  --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+  --Very-Light-Magenta: hsl(289, 100%, 72%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+.curve-left {
+  display: block;
+  width: 78vw;
+  height: 76vh;
+  border-radius: 200px;
+  rotate: 90deg;
+  position: absolute;
+  left: -368px;
+  top: 27px;
+  z-index: -1;
+  background: linear-gradient(180deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+}
+
+.curve-right {
+  display: block;
+  width: 70vw;
+  height: 65vh;
+  border-radius: 200px;
+  rotate: 90deg;
+  position: fixed;
+  right: -445px;
+  bottom: -198px;
+  background-color: var(--Light-Grayish-Violet);
+  z-index: -1;
+}
+
+.main-content {
+  box-sizing: border-box;
+  width: 98vw;
+  height: 170vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile {
+  width: 25vw;
+  background-color: var(--Light-Grayish-Violet);
+  border: 15px solid var(--White);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 15px 15px 80px -25px rgba(0, 0, 0, 0.15);
+  margin-left: 250px;
+}
+
+.info {
+  padding: 50px 15px 20px 15px;
+  background: linear-gradient(90deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+  border-radius: 15px 15px 5px 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.arrow {
+  width: 22px;
+  fill: #fff;
+}
+
+.notch {
+  align-self: center;
+  position: absolute;
+  background: white;
+  width: 141px;
+  height: 30px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.avatar {
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--White);
+}
+
+.profile-name {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.name {
+  color: var(--White);
+  font-weight: 700;
+}
+
+.status {
+  color: var(--Grayish-Blue);
+  font-size: 12px;
+}
+
+.menu {
+  justify-self: flex-end;
+  margin-left: auto;
+  width: 22px;
+}
+
+.chat {
+  padding: 20px 15px 20px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.receive,
+.sent {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.receive > div {
+  width: 70%;
+  padding: 8px;
+  border-radius: 10px 10px 10px 3px;
+  font-size: 12px;
+  background-color: hsla(276, 100%, 81%, 0.2);
+  color: var(--Moderate-Violet);
+  font-weight: 400;
+}
+
+.sent > div {
+  width: 70%;
+  padding: 8px;
+  border-radius: 10px 10px 3px 10px;
+  font-size: 12px;
+  background-color: var(--White);
+  color: var(--Desaturated-Dark-Violet);
+  font-weight: 400;
+  margin-left: auto;
+}
+
+.images {
+  background-color: var(--Light-Grayish-Violet) !important;
+  display: flex;
+  gap: 10px;
+}
+
+.images > img {
+  width: 61px;
+  border-radius: 5px;
+}
+
+.price {
+  background: linear-gradient(90deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--Pale-Violet) !important;
+  width: 80% !important;
+  padding: 10px !important;
+}
+
+.price span img {
+  width: 25px;
+}
+
+.price span:nth-child(3) {
+  margin-left: auto;
+  color: var(--White);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.typing-bar {
+  margin: 15px;
+}
+
+.typing-bar div {
+  padding: 10px 15px 10px 25px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  border-radius: 100px;
+  background-color: var(--White);
+}
+
+.typing-bar input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.typing-bar label {
+  margin-left: auto;
+  width: 35px;
+}
+
+.booking {
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-family: "Rubik", sans-serif;
+  margin-left: 100px;
+}
+
+.booking div {
+  font-size: 30px;
+  color: var(--Very-Dark-Desaturated-Violet);
+  font-weight: 700;
+}
+
+.booking p {
+  color: var(--Dark-Grayish-Violet);
+  line-height: 2;
+}
+
+@media (max-width: 450px) {
+  .curve-left {
+    width: 84vw;
+    height: 105vh;
+    rotate: unset;
+    top: -179px;
+    left: -206px;
+  }
+
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+
+  .mobile {
+    width: 80vw;
+    margin-left: 0px;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .booking {
+    width: 80vw;
+    text-align: center;
+    margin-left: 0px;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: auto;
+  }
+}
