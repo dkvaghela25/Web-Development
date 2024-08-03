@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+
+:root {
+    /* ### Primary */
+    
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    
+    /* ### Neutral */
+    
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lexend Deca", sans-serif;
+    color: var(--transparent-white);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 70%;
+    border-radius: 10px;
+}
+
+.container>div{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+p{
+    line-height: 30px;
+}
+
+.container>div>img{
+    width: fit-content;
+}
+
+.type{
+    font-size: 35px;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 700;
+}
+
+.sedans{
+    background-color: var(--bright-orange);
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+
+.suvs{
+    background-color: var(--dark-cyan);
+}
+
+.luxury{
+    background-color: var(--very-dark-cyan);
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+.learn-more{
+    background-color: var(--very-light-gray);
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-top: 50px;
+    border : 2px solid var(--very-light-gray);
+    text-decoration: none;
+}
+
+.sedans > .learn-more{
+    color: var(--bright-orange);
+}
+
+.suvs > .learn-more{
+    color: var(--dark-cyan);
+}
+
+.luxury > .learn-more{
+    color: var(--very-dark-cyan);
+}
+
+.sedans > .learn-more:hover{
+    background-color: var(--bright-orange);
+    color: var(--very-light-gray);
+}
+
+.suvs > .learn-more:hover{
+    background-color: var(--dark-cyan);
+    color: var(--very-light-gray);
+}
+
+.luxury > .learn-more:hover{
+    background-color: var(--very-dark-cyan);
+    color: var(--very-light-gray);
+}
+
+@media screen and (max-width:450px) {
+    body{
+        height: fit-content;
+    }
+    .container{
+        grid-template-columns: 1fr;
+        margin: 80px 0px;
+    }
+    .sedans{
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+        border-bottom-left-radius: 0px;
+    }
+    .luxury{
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: inherit;
+        border-bottom-right-radius: inherit;
+    }
+}
