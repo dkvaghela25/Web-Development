@@ -249,6 +249,27 @@ hr {
     margin-bottom: 30px;
 }
 
+.que{
+    cursor: pointer;
+}
+
+.que:hover{
+    background-color: #414141;
+}
+
+.ans{
+    border-top: 1px solid black;
+    display: none;
+}
+
+.ans {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2D2D2D;
+    padding: 30px;
+}
+
 .que {
     display: flex;
     align-items: center;
@@ -257,9 +278,18 @@ hr {
     padding: 30px;
 }
 
-.que>div {
+
+.que>div,.ans {
     font-size: 24px;
     font-weight: 400;
+}
+
+.visible{
+    display: inline-block;
+}
+
+.invisible{
+    display: none;
 }
 
 footer {
