@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-pink: hsl(275, 100%, 97%);
+    --Grayish-purple: hsl(292, 16%, 49%);
+    --Dark-purple: hsl(292, 42%, 14%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Work Sans", sans-serif;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Grayish-purple);
+}
+
+.pattern {
+    width: 100%;
+    height: 40vh;
+    position: absolute;
+    top: 0px;
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+    background-size: cover;
+}
+
+.container {
+    background-color: var(--White);
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 42vw;
+    z-index: 1;
+}
+
+.container>div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    color: var(--Dark-purple);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.que {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--Dark-purple);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+        color: #AD28EB;
+    }
+}
+
+.images {
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.images img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.ans {
+    color: var(--Dark-purple);
+    opacity: 0.6;
+}
+
+.display {
+    display: none;
+}
+
+@media screen and (max-width : 450px) {
+    .pattern {
+        background-image: url(./assets/images/background-pattern-mobile.svg);
+    }
+
+    .container {
+        width: 75vw;
+    }
+}
