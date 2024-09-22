@@ -17,7 +17,9 @@
 
 nav {
     padding: 50px;
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav a:nth-child(2) {
@@ -29,7 +31,7 @@ nav a:nth-child(2) {
     text-decoration: none;
 }
 
-nav a:nth-child(2):hover{
+nav a:nth-child(2):hover {
     border: 1px solid var(--Light-Pink);
     color: var(--Light-Pink);
 }
@@ -63,7 +65,7 @@ nav a:nth-child(2):hover{
     text-decoration: none;
 }
 
-.start:hover{
+.start:hover {
     background-color: var(--Light-Pink);
 }
 
@@ -147,6 +149,7 @@ footer>div:first-child {
     background-color: var(--Very-Dark-Cyan);
     padding: 50px;
     display: flex;
+    gap: 30px;
 }
 
 
@@ -166,46 +169,59 @@ footer>div:first-child {
     width: 240px;
 }
 
-.box3>p,.box4>p {
+.box3>p,
+.box4>p {
     text-align: left;
     width: 420px;
 }
 
-.contact{
+.contact {
     display: flex;
     gap: 20px;
 }
 
-.contact img{
+.contact img {
     width: 25px;
 }
 
-.others{
+.others {
     display: flex;
     gap: 30px;
     margin-top: 50px;
 }
 
-.others img{
-    width: 50px;
+.others svg {
+    width: 40px;
+    cursor: pointer;
+
+    &:hover path {
+        fill: aqua;
+    }
 }
 
-.box4 > div{
+.box4 div:first-child {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.box4>div {
     text-align: left;
 }
 
-.sub{
+.sub {
     display: flex;
     gap: 30px;
     align-items: center;
 }
 
-input{
+input {
     width: 380px;
     height: 35px;
 }
 
-.sub > a{
+.sub>button {
+    cursor: pointer;
+    border: none;
     background-color: var(--Pink);
     width: 150px;
     text-align: center;
@@ -217,7 +233,135 @@ input{
     font-weight: 500;
 }
 
-.sub a:hover{
+.sub a:hover {
     background-color: var(--Light-Pink);
 }
 
+.display {
+    display: none;
+}
+
+.warning {
+    position: relative;
+    top: -30px;
+    color: var(--Light-Red);
+    font-size: 14px;
+}
+
+@media (max-width:450px) {
+    nav img {
+        width: 40%;
+    }
+
+    .box1 img {
+        margin-top: 20vh;
+    }
+
+    .box2 {
+        margin-top: 12vh;
+        gap: 20vh;
+        margin-bottom: 0px;
+    }
+
+    .box1,
+    footer {
+        flex-direction: column;
+        margin-top: 15vh;
+    }
+
+    .info {
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .illustration {
+        margin-top: 80px;
+        flex-direction: column-reverse;
+        padding: 15px;
+        border-radius: 10px;
+        gap: 70px;
+    }
+
+    .box1>div,
+    .points {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box1 div p,
+    .points>p {
+        text-align: center;
+    }
+
+    .heading {
+        width: 90%;
+        font-size: 25px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .illustration>img {
+        width: 100%;
+    }
+
+    .points>div {
+        font-size: 25px;
+    }
+
+    .box3>p,
+    .contact {
+        width: 100%;
+    }
+
+    .box3 {
+        width: 100%;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        margin-top: 60px;
+    }
+
+    #about {
+        flex-direction: column-reverse;
+    }
+
+    .box4 p,
+    .box1 p,
+    .box1>img {
+        width: 80vw;
+    }
+
+    .socials {
+        height: 100%;
+        margin-top: 30px;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+    .main {
+        padding-top: 200px;
+    }
+
+    .ready>div {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .ready>div:first-child {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    footer>div:first-child {
+        width: 100%;
+        background-image: url(./images/bg-footer-top-mobile.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: relative;
+        top: 98px;
+    }
+
+}
